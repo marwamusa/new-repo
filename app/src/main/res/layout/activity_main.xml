@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/mainNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Main Node"
+        android:maxWidth="100dp"
+        android:padding="20dp"
+        android:background="@drawable/rec_shape" />
+
+    <Button
+        android:id="@+id/line"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_shape"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/mainNode"/>
+
+    <Button
+        android:id="@+id/node1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/line"
+        android:text="Node 1"
+        android:padding="20dp"
+        android:background="@drawable/rec_shape" />
+
+    <Button
+        android:id="@+id/line2"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_shape"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/mainNode"/>
+
+    <Button
+        android:id="@+id/node2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/line2"
+        android:background="@drawable/rec_shape"
+        android:padding="20dp"
+        android:text="Node 2" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainNode"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</RelativeLayout>
+
